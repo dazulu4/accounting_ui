@@ -1,0 +1,19 @@
+<div class="p-6 space-y-4">
+  <div class="flex justify-between items-center">
+    <h1 class="text-3xl font-bold">Task List</h1>
+    <ui-button label="New Task" routerLink="/new" />
+  </div>
+
+  <user-filter 
+    [users]="users()" 
+    [selectedUserId]="selectedUserId()"
+    (userSelected)="onUserSelected($event)" />
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    @for (task of tasks(); track task.task_id) {
+      <task-card [task]="task" (complete)="onComplete($event)" />
+    } @empty {
+      <p>No tasks found.</p>
+    }
+  </div>
+</div> 

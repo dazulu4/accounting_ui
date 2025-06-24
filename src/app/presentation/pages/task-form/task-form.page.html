@@ -1,0 +1,16 @@
+<div class="max-w-xl mx-auto mt-8 p-6 border rounded bg-white shadow">
+  <h2 class="text-2xl font-semibold mb-4">Create New Task</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+    <task-input controlName="title" label="Title" />
+    <task-input controlName="description" label="Description" />
+    <user-selector controlName="user_id" />
+    <task-select-status controlName="status" />
+
+    <ui-button
+      type="submit"
+      label="Create Task"
+      [disabled]="form.invalid || isSubmitting()"
+    />
+  </form>
+</div> 
