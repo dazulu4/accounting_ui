@@ -3,10 +3,10 @@ import { Task } from '../../../domain/models/task.model';
 import { TaskCardComponent } from '../../molecules/task-card/task-card.component';
 import { UiButtonComponent } from '../../atoms/ui-button/ui-button.component';
 import { RouterModule } from '@angular/router';
-import { TaskService } from '../../../domain/services/task.service';
+import { TaskService } from '../../../domain/ports/task.service';
 import { UserFilterComponent } from '../../molecules/user-filter/user-filter.component';
 import { User } from '../../../domain/models/user.model';
-import { UserService } from '../../../domain/services/user.service';
+import { UserService } from '../../../domain/ports/user.service';
 import { take } from 'rxjs';
 
 @Component({

@@ -4,9 +4,9 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
-import { UserService } from './domain/services/user.service';
+import { UserService } from './domain/ports/user.service';
 import { UserApiService } from './data/services/user-api.service';
-import { TaskService } from './domain/services/task.service';
+import { TaskService } from './domain/ports/task.service';
 import { TaskApiService } from './data/services/task-api.service';
 
 export const appConfig: ApplicationConfig = {

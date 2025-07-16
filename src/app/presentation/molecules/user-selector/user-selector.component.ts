@@ -11,7 +11,7 @@ import {
 import { catchError, tap } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { User } from '../../../domain/models/user.model';
-import { UserService } from '../../../domain/services/user.service';
+import { UserService } from '../../../domain/ports/user.service';
 
 @Component({
   selector: 'user-selector',

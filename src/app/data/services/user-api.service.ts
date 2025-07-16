@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../../domain/models/user.model';
-import { UserService } from '../../domain/services/user.service';
+import { UserService } from '../../domain/ports/user.service';
 
 @Injectable({ providedIn: 'root' })
 export class UserApiService extends UserService {

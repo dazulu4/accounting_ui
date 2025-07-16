@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Task } from '../../domain/models/task.model';
-import { TaskService } from '../../domain/services/task.service';
+import { TaskService } from '../../domain/ports/task.service';
 
 @Injectable({ providedIn: 'root' })
 export class TaskApiService extends TaskService {

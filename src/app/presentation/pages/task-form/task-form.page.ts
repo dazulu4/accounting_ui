@@ -11,7 +11,7 @@ import { TaskSelectStatusComponent } from '../../atoms/task-select-status/task-s
 import { UiButtonComponent } from '../../atoms/ui-button/ui-button.component';
 import { Router } from '@angular/router';
 import { UserSelectorComponent } from '../../molecules/user-selector/user-selector.component';
-import { TaskService } from '../../../domain/services/task.service';
+import { TaskService } from '../../../domain/ports/task.service';
 import { APP_CONSTANTS } from '../../../core/config/constants';
 
 @Component({
